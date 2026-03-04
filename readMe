@@ -1,7 +1,38 @@
-Step 3: Encapsulation (Very Important in Automation)
+connect the Node.js project on the desktop to a CI/CD pipeline
 
-Encapsulation = Hide internal details and protect data.
+/*************************************************
+Step1:
 
-In TypeScript, we use:
+Push Your Node Project to a Git Repository
+1. Go to your project folder in terminal:cd /path/to/your/project or open the folder locally
+2. Initialize Git : git init
+3. Add all files: git add.
+4. Commit: git commit -m "Initial Commit"
+5. Create a repo on GitHub or GitLab to connect it: 
+git remote add origin https://github.com/yourusername/your-repo.git
+git branch -M main
+git push -u origin main
 
-private , public ,protected
+Step 2: Choose a CI/CD Platform
+
+GitHub Actions – built into GitHub
+
+GitLab CI/CD – built into GitLab
+
+CircleCI – cloud CI/CD
+
+Jenkins – self-hosted, more setup needed
+
+Step 3:Create a CI Workflow File
+
+1. Inside your project, create this folder structure: .github/workflows/
+2. Create a file like ci.yml inside it: ci.yml(refer ci.yml file)
+
+Step4: Commit &Push Workflow
+
+Step 5: Add Deployment
+Add steps to deploy to Vercel, Heroku, AWS, Azure, etc.
+
+******************************************************
+
+Node project is connected to a CI/CD pipeline! Every push will automatically build and test the code.
