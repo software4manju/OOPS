@@ -1,6 +1,9 @@
 connect the Node.js project on the desktop to a CI/CD pipeline
-
 /*************************************************
+
+************Continous Integration:***********
+
+
 Step1:
 
 Push Your Node Project to a Git Repository
@@ -32,6 +35,28 @@ Step4: Commit &Push Workflow
 
 Step 5: Add Deployment
 Add steps to deploy to Vercel, Heroku, AWS, Azure, etc.
+
+******************************************************
+
+What You Need Before CD
+
+You need:
+
+✅ GitHub repo
+✅ Working CI pipeline (GitHub Actions YAML)
+✅ AWS or Azure account
+✅ Your Node app ready (with package.json and start script)
+
+******************************************************
+**************Continous Deployment:**********
+
+In CI above steps tthe test runs automatically when the code is pushed or commis. After tests pass, the app is automatically deployed to a server (AWS/Azure) without the manually uploading files.
+
+So the flow becomes:
+
+You push code → GitHub runs tests (CI) → If tests pass → App auto-deploys
+
+
 
 ******************************************************
 
