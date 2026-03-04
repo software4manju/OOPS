@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext", 
+    "types": ["node", "@playwright/test"],
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true, 
+    "noUncheckedIndexedAccess": true,    
+    "strict": false,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "moduleResolution": "node"
+  },
+  "include": ["tests",
+    "pages",
+    "playwright.config.ts"]
+}

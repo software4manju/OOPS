@@ -1,0 +1,7 @@
+Step 3: Encapsulation (Very Important in Automation)
+
+Encapsulation = Hide internal details and protect data.
+
+In TypeScript, we use:
+
+private , public ,protected
