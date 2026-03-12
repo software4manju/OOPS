@@ -4,7 +4,9 @@
   "description": "Step 3: Encapsulation (Very Important in Automation)",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "playwright test",
+    "report": "playwright show-report"
   },
   "keywords": [],
   "author": "",
