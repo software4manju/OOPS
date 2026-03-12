@@ -25,13 +25,17 @@ export class SignInToGitHubPage extends BasePage {
     }   
 
     async clickSignInButton() {
-        await this.page.getByRole('button', { name: 'Sign in' }).click();       
-    }
+        await this.page.getByRole('button', { name: 'Sign in' }).nth(1).click();  
+         }
 
     async clickGitHubLink() {
        await this.page.getByRole("link", { name: "GitHub repository" }).click();
        await this.page.setViewportSize({ width: 1280, height: 800 });
     }
+
+     async clickSignInSection() {     
+        await this.page.getByRole('link', { name: 'Sign in' }).click();
+    } 
 
 }
     
